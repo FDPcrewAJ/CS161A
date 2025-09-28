@@ -1,15 +1,33 @@
+/**********************************************************************
+# Author:       Aiden Jungels
+# Assignment:   A01 (CS161A)
+# Date:         9/27/25
+# Description:  This program will read the employee’s ID, number of 
+#               hours worked, hourly wage, and federal withholding 
+#               rate. Then it will calculate the total gross pay, 
+#               Income tax withholding, and net pay, then print that 
+#               out to the console for the user to see.
+# Input:        int: employeeId
+#               int: hoursWorked
+#               int: hourlyRate
+#               int: withholdRate
+# Output:       Displays the total gross pay, federal tax withholding,
+#               and net pay each on individual lines folowed by a
+#               goodbye message
+# Sources:      CS Assigment 1 Doc, CS1 Algorithmic Design Document
+**********************************************************************/
+
 #include <iostream>
 using namespace std;
 
 // Main Function
 int main() {
     
-    // Initialize variables needed for input
+    // Initialize variables needed for input and calculations
     int employeeId = 0;
     int hoursWorked = 0;
     int hourlyRate = 0;
     int withholdRate = 0;
-    // Initialize variables needed for calculations
     int grossPay = 0;
     int taxWithheld = 0;
     int netPay = 0;
@@ -33,11 +51,13 @@ int main() {
     netPay = grossPay - taxWithheld;
 
     // Display calculated pay results
-    cout << "Payroll Summary" << endl;
+    cout << endl << "Payroll Summary" << endl;
     cout << "Total Gross Pay: $" << grossPay << endl;
     cout << "Federal Tax Withholding: $" << taxWithheld << endl;
     cout << "Net Pay: $" << netPay << endl;
-    cout << "Thank you for using the Weekly Payroll Calculator!" << endl;
+
+    // Display goodbye message
+    cout << endl << "Thank you for using the Weekly Payroll Calculator!" << endl;
     
     return 0;
 }
