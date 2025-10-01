@@ -1,3 +1,17 @@
+/**********************************************************************
+# Author:       Aiden Jungels
+# Assignment:   A01 (CS161A)
+# Date:         9/27/25
+# Description:  This program will read the number of oreos eaten from
+#               the user, then calculate the nunber of servings eaten
+#               and the total number of calories eaten, and print
+#               the results to the console for the user to see.
+# Input:        int: numOreos
+# Output:       Displays number of servings eaten, and number of
+#               calories eaten, followed by a goodbye message
+# Sources:      CS Assigment 2 Doc, CS1 Algorithmic Design Document,
+#               Zybooks Chapter 2
+**********************************************************************/
 #include <iostream>
 using namespace std;
 
@@ -7,8 +21,9 @@ const int CALORIES_PER_SERVING = 160;
 
 // Main funciton
 int main() {
-    // Variable setup
+    // Number of oreos input variable
     int numOreos = 0;
+    // Serving and calorie calculation variables
     float numServings = 0.0;
     float numCalroies = 0.0;
 
