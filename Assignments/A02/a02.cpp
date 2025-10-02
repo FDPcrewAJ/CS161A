@@ -13,6 +13,7 @@
 #               Zybooks Chapter 2
 **********************************************************************/
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // Constant variables
@@ -24,8 +25,8 @@ int main() {
     // Number of oreos input variable
     int numOreos = 0;
     // Serving and calorie calculation variables
-    float numServings = 0.0;
-    float numCalroies = 0.0;
+    double numServings = 0.0;
+    double numCalroies = 0.0;
 
     // Welcome Message and oreos eaten input
     cout << "Oreo Calculator" << endl;
@@ -38,8 +39,8 @@ int main() {
     numCalroies = numServings * CALORIES_PER_SERVING;
 
     // Display results
-    cout << endl << "Number of servings eaten: " << numServings << endl;
-    cout << "Number of calories consumed: " << numCalroies << endl;
+    cout << endl << "Number of servings eaten: " << fixed << setprecision(1) << numServings << endl;
+    cout << "Number of calories consumed: " << fixed << setprecision(1) << numCalroies << endl;
     // Goodbye message
     cout << endl << "Thank you for using!" << endl;
 
