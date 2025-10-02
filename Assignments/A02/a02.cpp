@@ -1,7 +1,7 @@
 /**********************************************************************
 # Author:       Aiden Jungels
-# Assignment:   A01 (CS161A)
-# Date:         9/27/25
+# Assignment:   A02 (CS161A)
+# Date:         10/1/25
 # Description:  This program will read the number of oreos eaten from
 #               the user, then calculate the nunber of servings eaten
 #               and the total number of calories eaten, and print
@@ -9,7 +9,7 @@
 # Input:        int: numOreos
 # Output:       Displays number of servings eaten, and number of
 #               calories eaten, followed by a goodbye message
-# Sources:      CS Assigment 2 Doc, CS1 Algorithmic Design Document,
+# Sources:      CS Assigment 2 Doc, CS1 Algorithmic Design Doc,
 #               Zybooks Chapter 2
 **********************************************************************/
 #include <iostream>
@@ -39,7 +39,7 @@ int main() {
     numCalroies = numServings * CALORIES_PER_SERVING;
 
     // Display results
-    cout << endl << "Number of servings eaten: " << numServings << endl;
+    cout << endl << "Number of servings eaten: " << fixed << setprecision(1) << numServings << endl;
     cout << "Number of calories consumed: " << fixed << setprecision(1) << numCalroies << endl;
     // Goodbye message
     cout << endl << "Thank you for using!" << endl;
