@@ -39,10 +39,9 @@ int main() {
     numCalroies = numServings * CALORIES_PER_SERVING;
 
     // Display results
-    cout << endl << "Number of servings eaten: ";
-    cout << fixed << setprecision(1) << numServings << endl;
-    cout << "Number of calories consumed: ";
-    cout << fixed << setprecision(1) << numCalroies << endl;
+    cout << fixed << setprecision(1);
+    cout << endl << "Number of servings eaten: " << numServings << endl;
+    cout << "Number of calories consumed: " << numCalroies << endl;
     // Goodbye message
     cout << endl << "Thank you for using!" << endl;
 
