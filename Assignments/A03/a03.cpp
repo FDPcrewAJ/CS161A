@@ -25,6 +25,8 @@
 #include <iomanip>
 using namespace std;
 
+const double MAX_WITHDRAW_AMT = 500.0;
+
 // Main funciton
 int main() {
 
@@ -78,7 +80,7 @@ int main() {
             cin >> withdrawAmt;
 
             // Ensure withdraw amount is between 0-500
-            if ((withdrawAmt >= 0) && (withdrawAmt <= 500)) {
+            if ((withdrawAmt >= 0) && (withdrawAmt <= MAX_WITHDRAW_AMT)) {
                 accountBalance -= withdrawAmt;
                 
                 // Make sure user has enough funds in account
@@ -90,7 +92,8 @@ int main() {
                 }
             }
             else {
-                cout << "Error: withdrawal amount must be greater than zero or less than the limit of $500" << endl;
+                cout << "Error: withdrawal amount must be greater";
+                cout << "than zero or less than the limit of $500" << endl;
             }
         }
         else if (userAction != 3) {
@@ -101,7 +104,8 @@ int main() {
         cout << endl << "Thank you for using the ATM!" << endl;
     }
     else if (accountStatus == 'N' || accountStatus == 'n') {
-        cout << "Thank you for your time. Please visit us when you have an account." << endl;
+        cout << "Thank you for your time. ";
+        cout << "Please visit us when you have an account." << endl;
     }
     else {
         // Notify user of invalid input
