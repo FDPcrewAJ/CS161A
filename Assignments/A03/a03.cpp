@@ -1,3 +1,26 @@
+/**********************************************************************
+# Author:       Aiden Jungels
+# Assignment:   A03 (CS161A)
+# Date:         10/10/2025
+# Description:  This program will first ask the user if they have an 
+#               account at the bank. If they answer no, the program 
+#               will end with a goodbye message. If they answer yes, 
+#               then it will ask for their account balance, and then 
+#               give them the option to either deposit money into the 
+#               account, withdraw money from the account, or exit the 
+#               program. The program will then do whatever of the three 
+#               options the user chooses.
+# Input:        char accountStatus, int userAction, double 
+#               accountBalance, double depositAmt, double withdrawAmt
+# Output:       If the user deposits or withdraws money from their
+#               account, the final account balance is displayed
+#               If the user does not have an account, then a goodbye
+#               message is displayed.
+#               If the user enters an invalid input at any time,
+#               the program notifies the user of this and ends.
+# Sources:      CS Assigment 3 Doc, CS1 Algorithmic Design Doc,
+#               Zybooks Chapter 3
+**********************************************************************/
 #include <iostream>
 #include <iomanip>
 using namespace std;
