@@ -54,7 +54,7 @@ int main() {
             // Check if phrase1 is in phrase2
             if (matchLocation == string::npos) {
                 // Display no matches if there are none
-                cout << "No match in phrases" << endl;
+                cout << endl << "No match in phrases" << endl;
             }
             // When phrase1 is in phrase2, display info to user
             else {
