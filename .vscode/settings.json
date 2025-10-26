@@ -5,7 +5,8 @@
         "xstring": "cpp",
         "xlocale": "cpp",
         "xiosbase": "cpp",
-        "cstdlib": "cpp"
+        "cstdlib": "cpp",
+        "string": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
