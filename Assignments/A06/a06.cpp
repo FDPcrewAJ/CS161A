@@ -32,9 +32,9 @@ int main() {
 
         // Display menu
         cout << "Please pick an option ($0.25 each):" << endl;
-        cout << "\tC/c: Coffee" << endl;
-        cout << "\tT/t: Tea" << endl;
-        cout << "\tQ/q: Quit" << endl;
+        cout << "    C/c: Coffee" << endl;
+        cout << "    T/t: Tea" << endl;
+        cout << "    Q/q: Quit" << endl;
         cout << ">> ";
         
         // Get user input, confirm valid choice
@@ -58,18 +58,19 @@ int main() {
         }
 
         // Ask for number of items
+        validChoice = false;
         cout << "How many would you like?" << endl;
         cout << ">> ";
         do {
             cin >> itemAmount;
             if (isdigit(itemAmount)) {
-
+                validChoice = true;
             }
             else {
                 cout << "Invalid option! Please choose a valid option." << endl;
                 cout << ">> ";
             }
-        } while (condition);
+        } while (!validChoice);
         
 
         // End program
