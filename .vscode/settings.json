@@ -6,7 +6,8 @@
         "xlocale": "cpp",
         "xiosbase": "cpp",
         "cstdlib": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "istream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
