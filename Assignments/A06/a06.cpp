@@ -23,7 +23,7 @@
 #include <typeinfo>
 using namespace std;
 
-static double SINGLE_ITEM_COST = 0.25;
+const double SINGLE_ITEM_COST = 0.25;
 
 // Main Function
 int main() {
