@@ -7,8 +7,8 @@
 #               the program will ask for that many numbers, and track 
 #               the highest/lowest numbers input, as well as the first 
 #               position they show up in when inputting.
-# Input:        
-# Output:       
+# Input:        int inputNum, int nextInput
+# Output:       int maxVal, int minval, int maxIndex, int minIndex
 # Sources:      CS Assigment 9 Doc, CS1 Algorithmic Design Doc,
 #               Zybooks Chapter 9
 **********************************************************************/
